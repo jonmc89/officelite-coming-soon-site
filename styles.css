@@ -23,6 +23,8 @@
     --Blue-100: #e4eaff;
     /* Red */
     --Red-400: #f05b5b;
+    /* Box Shadow */
+    --Box-Shadow: #cad0ea;
 }
 
 /* Fonts */
@@ -32,4 +34,63 @@
     src: url("./fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf");
     font-weight: 100 900;
     font-style: normal;
+}
+
+/* || End */
+
+/* || Main Styling */
+
+body {
+    font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-block-end: 5rem;
+    padding-top: 2.5rem;
+}
+
+/* Hero Section */
+
+.hero-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.hero-img {
+    height: auto;
+    margin-block-end: 3.5rem;
+    width: 50%;
+}
+
+h1 {
+    color: var(--Neutral-800);
+    font-size: 3rem;
+    margin-block-end: 1.5rem;
+}
+
+.hero-text {
+    color: var(--Neutral-500);
+    font-size: 1rem;
+    line-height: 150%;
+    margin-block-end: 1.5rem;
+}
+
+.get-started-btn {
+    background-color: var(--Blue-500);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0rem 1rem 1.5rem var(--Box-Shadow);
+    color: var(--Neutral-0);
+    cursor: pointer;
+    font-weight: 550;
+    padding: 0.8rem 2.5rem;
 }
