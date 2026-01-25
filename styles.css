@@ -1,0 +1,35 @@
+/* || Global Styles */
+
+/* CSS Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Colours */
+
+:root {
+    /* Neutral */
+    --Neutral-900: #25293a;
+    --Neutral-800: #333950;
+    --Neutral-500: #747b95;
+    --Neutral-50: #fafafa;
+    --Neutral-0: #fff;
+    /* Blue */
+    --Blue-500: #5175ff;
+    --Blue-300: #829cff;
+    --Blue-100: #e4eaff;
+    /* Red */
+    --Red-400: #f05b5b;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url("./fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf");
+    font-weight: 100 900;
+    font-style: normal;
+}
