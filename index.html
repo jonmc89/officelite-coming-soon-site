@@ -18,6 +18,7 @@
                 class="header-logo"
                 src="./assets/shared/logo.svg"
                 alt="logo"
+                tabindex="1"
             />
         </header>
         <main>
@@ -27,16 +28,94 @@
                     src="./assets/home/illustration-charts.svg"
                     alt="charts illustration"
                 />
-                <h1>A simple solution to complex tasks is coming soon</h1>
-                <p class="hero-text">
-                    Say goodbye to inefficient juggling of multiple apps, teams,
-                    and projects. Officelite is the new collaboration platform
-                    built with an intuitive interface to improve productivity.
+                <article class="hero-article">
+                    <h1>A simple solution to complex tasks is coming soon</h1>
+                    <p class="hero-text">
+                        Say goodbye to inefficient juggling of multiple apps,
+                        teams, and projects. Officelite is the new collaboration
+                        platform built with an intuitive interface to improve
+                        productivity.
+                    </p>
+                    <button class="get-started-btn" type="button" tabindex="2">
+                        Get Started
+                    </button>
+                </article>
+            </section>
+            <section class="prices-section">
+                <article class="card free">
+                    <div class="card-pricing-container">
+                        <h2>Basic</h2>
+                        <h3>Free</h3>
+                        <p>Up to 5 users for free</p>
+                    </div>
+                    <div class="card-features-container">
+                        <p>Basic document collaboration</p>
+                        <p>2 GB storage</p>
+                        <p>Great security and support</p>
+                    </div>
+                    <button type="button" class="btn-free" tabindex="3">
+                        Try for Free
+                    </button>
+                </article>
+                <article class="card basic">
+                    <div class="card-pricing-container">
+                        <h2>Basic</h2>
+                        <h3>$9.99</h3>
+                        <p>Per user, billed monthly</p>
+                    </div>
+                    <div class="card-features-container">
+                        <p>All essential integration</p>
+                        <p>50 GB storage</p>
+                        <p>More contol and insights</p>
+                    </div>
+                    <button type="button" class="btn-basic" tabindex="4">
+                        Try for Free
+                    </button>
+                </article>
+                <article class="card ultimate">
+                    <div class="card-pricing-container">
+                        <h2>Ultimate</h2>
+                        <h3>$19.99</h3>
+                        <p>Per user, billed monthly</p>
+                    </div>
+                    <div class="card-features-container">
+                        <p>Robust work management</p>
+                        <p>100 GB storage</p>
+                        <p>VIP support</p>
+                    </div>
+                    <button type="button" class="btn-free" tabindex="5">
+                        Try for Free
+                    </button>
+                </article>
+            </section>
+            <section class="countdown-section">
+                <p class="soon">
+                    <span class="coming">COMING </span>4 NOV 2026
                 </p>
-                <button class="get-started-btn" type="button">
+                <div class="countdown-timer-container">
+                    <div class="days">
+                        <div id="days"></div>
+                        <p class="countdown-unit">days</p>
+                    </div>
+                    <div class="hours">
+                        <div id="hours"></div>
+                        <p class="countdown-unit">hours</p>
+                    </div>
+                    <div class="minutes">
+                        <div id="minutes"></div>
+                        <p class="countdown-unit">minutes</p>
+                    </div>
+                    <div class="seconds">
+                        <div id="seconds"></div>
+                        <p class="countdown-unit">seconds</p>
+                    </div>
+                </div>
+                <button type="button" class="footer-btn" tabindex="6">
                     Get Started
                 </button>
             </section>
         </main>
+        <div class="dark-bkg"></div>
+        <script src="script.js" defer></script>
     </body>
 </html>
