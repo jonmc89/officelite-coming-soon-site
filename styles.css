@@ -40,6 +40,10 @@
 
 /* || Main Styling */
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
     padding: 0 1rem 0 1rem;
@@ -56,6 +60,16 @@ header {
     padding-top: 2.5rem;
 }
 
+.header-img {
+    height: auto;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
 /* Hero Section */
 
 .hero-section {
@@ -70,8 +84,8 @@ header {
 .hero-img {
     height: auto;
     margin-block-end: 3.5rem;
-
     width: 50%;
+    z-index: 99;
 }
 
 h1 {
@@ -95,6 +109,7 @@ h1 {
     color: var(--Neutral-0);
     cursor: pointer;
     font-weight: 550;
+    font-size: 1.1rem;
     padding: 0.8rem 2.5rem;
     transition: opacity 0.2s ease-in-out;
 }
@@ -161,6 +176,7 @@ h3 {
     color: var(--Blue-500);
     cursor: pointer;
     font-weight: 600;
+    font-size: 1.1rem;
     padding: 0.8rem 2.5rem;
     transition:
         background-color 0.2s ease-in-out,
@@ -184,6 +200,7 @@ h3 {
     color: var(--Blue-500);
     cursor: pointer;
     font-weight: 600;
+    font-size: 1.1rem;
     padding: 0.8rem 2.5rem;
     transition: background-color 0.2s ease-in-out;
 }
@@ -261,7 +278,7 @@ h3 {
 #minutes,
 #seconds {
     color: var(--Neutral-0);
-    font-size: 1.8rem;
+    font-size: clamp(0.8rem, 5vw, 2rem);
     font-weight: 600;
 }
 
@@ -276,6 +293,7 @@ h3 {
     color: var(--Neutral-0);
     cursor: pointer;
     font-weight: 550;
+    font-size: 1.1rem;
     margin-block-end: 3rem;
     padding: 0.8rem 2.5rem;
     transition: background-color 0.2s ease-in-out;
@@ -288,6 +306,17 @@ h3 {
 
 .footer-btn:hover {
     background-color: var(--Blue-300);
+}
+
+/* Dark Background */
+
+.footer-img {
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
 }
 
 .dark-bkg {
@@ -310,6 +339,7 @@ h3 {
 @media screen and (min-width: 51.25rem) {
     body {
         padding: 0 2.5rem 0 2.5rem;
+        background-color: var(--Neutral-50);
     }
 
     /* Header */
@@ -338,11 +368,48 @@ h3 {
         grid-column: 2;
         width: 100%;
     }
+
+    /* Pricing Section */
+
+    .card {
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr);
+        gap: 0;
+    }
+
+    .btn-free {
+        justify-self: center;
+        width: 12rem;
+    }
+
+    .btn-basic {
+        justify-self: center;
+        width: 12rem;
+    }
+
+    .card-pricing-container {
+        margin-block-end: 2rem;
+    }
+
+    .card-features-container {
+        align-self: center;
+    }
+
+    .dark-bkg {
+        height: 43%;
+    }
+
+    /* Countdown Section */
 }
 
 @media screen and (min-width: 80rem) {
     body {
         padding: 1.5rem 10rem 0 10rem;
+    }
+
+    .header-img {
+        width: 40%;
+        transform: translate(65rem, -20%);
     }
 
     /* Hero Section */
@@ -353,6 +420,49 @@ h3 {
 
     .hero-img {
         justify-self: end;
+    }
+
+    /* Pricing Section */
+
+    .prices-section {
+        flex-direction: row;
+        gap: 5rem;
+        margin-block-end: 10rem;
+    }
+
+    .card {
+        display: flex;
+        padding: 2.5rem 0rem;
+        gap: 2rem;
+        width: 25%;
+    }
+
+    .free {
+        box-shadow: none;
+    }
+
+    /* Countdown Section */
+
+    .countdown-section {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 4rem;
+        overflow-y: hidden;
+    }
+
+    .timer {
+        text-align: left;
+    }
+
+    /* Dark Background */
+
+    .footer-img {
+        transform: translate(-25%, 45%);
+        width: 40%;
+    }
+
+    .dark-bkg {
+        height: 30%;
     }
 }
 
