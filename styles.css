@@ -330,6 +330,17 @@ h3 {
     z-index: -1;
 }
 
+/* Fade In Animation */
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
 /* || End */
 
 /* || Media Queries */
@@ -467,3 +478,106 @@ h3 {
 }
 
 /* || End */
+
+/* || Sign Up Page */
+
+/* Sign Up Hero Section */
+
+.sign-up-hero-section {
+    margin-block-end: 2.5rem;
+    text-align: center;
+}
+
+.sign-up-h1 {
+    color: var(--Neutral-900);
+    padding: 0 1rem;
+}
+
+.sign-up-text {
+    color: var(--Neutral-500);
+    padding: 0 1rem;
+}
+
+.timer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-up-coming {
+    color: var(--Neutral-900);
+}
+
+#hours,
+#days,
+#minutes,
+#seconds {
+    color: var(--Blue-500);
+    font-weight: 800;
+}
+
+.hours,
+.days,
+.minutes,
+.seconds {
+    background-color: var(--Blue-100);
+    width: 5rem;
+}
+
+/* Form Section */
+
+.sign-up-form-section {
+    padding: 0 1.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-block-end: 4rem;
+}
+
+input,
+select {
+    border: none;
+    padding: 1.5rem;
+    border-bottom: 0.05rem solid var(--Neutral-500);
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: var(--Neutral-500);
+    font-weight: 500;
+}
+
+input:focus,
+select:focus {
+    outline-color: var(--Blue-500);
+}
+
+select {
+    color: var(--Neutral-900);
+    font-weight: 600;
+}
+
+.form-submit {
+    border: none;
+    border-radius: 1.5rem;
+    background-color: var(--Blue-500);
+    color: var(--Neutral-0);
+    cursor: pointer;
+    font-weight: 600;
+    margin-block-start: 0.5rem;
+    padding: 1rem;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.form-submit:hover {
+    opacity: 0.7;
+}
+
+.form-submit:focus {
+    outline-color: var(--Blue-500);
+    outline-offset: 0.2rem;
+}
